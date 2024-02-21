@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LInk rel="shortcut icon" type="x-icon" href="images/222-removebg-preview.png"></LInk>
+    <title>Code.Geek</title>
+    <link rel="stylesheet" href="abot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href='http://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+     />
+     
+     <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+    <header>
+   
+        <img src="images/666-removebg-preview.png" class="lpng">
+          
+         <div class="navbar"> 
+          <div class="container">
+           
+          </div>
+             
+              <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://github.com/hddenuwan21?tab=repositories">Github</a></li>
+                
+            </ul>
+            <a href="login.html" class="action_btn">login</a>
+              <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            
+       </div> 
+       <div class="dropdown_menu">
+       <li><a href="index.html">Home</a></li>
+       <li><a href="project.html">Projects</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="https://github.com/hddenuwan21?tab=repositories">Github</a></li>
+       
+       <li><a href="login.html" class="action_btn">Login</a></li>
+      
+     
+    </div> 
+      
+      </header>
+    
+    <h1 class="page-title">About</h1>
+
+    <div class="content">
+        <div class="container">
+            <img src="images/2 (1).png">
+            <div class="about">
+                <h2>I'm  HD Denuwan</h2>
+                <p>I m beginner of Web Developer.I specialize in creating innovative and dynamic online experiences. From sleek designs to robust functionality, I bring visions to life in the digital realm. Let's build your online success together."</p>
+                <p class="email">Contact Me : <a href=""> denu3021@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="skills" id="skills">
+        
+        <h3>My Expertise</h3>
+        <div class="skill-items">
+            <div class="item">
+                <div class="icon"><i class="fa-brands fa-nfc-directional"></i></div>
+                <h4>Strategy & Direction</h4>
+                <p>
+                    A web developer excels in project planning, goal-setting, team leadership, resource management, and adapts to evolving challenges with technical proficiency.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-heart-circle-bolt"></i></div>
+                <h4>Branding & Logo</h4>
+                <p>
+                    Web developers proficient in branding and logo design create visually compelling, brand-consistent websites, fostering user trust and recognition for businesses and organizations.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fa-brands fa-figma"></i></div>
+                <h4>UI & UX Design</h4>
+                <p>
+                    Web developers adept in UI & UX design enhance user satisfaction, create intuitive interfaces, and prioritize accessibility, delivering seamless digital experiences for diverse audiences.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-code"></i></div>
+                <h4>Webflow Coding</h4>
+                <p>
+                    Web developers skilled in Webflow coding excel at creating dynamic and responsive websites, leveraging its visual development platform for efficient design implementation and customization.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        
+    
+        <div class="cols">
+            <div class="about-col">
+                <h3>Code.Geek</h3>
+                <p>Creative FullStack Developer</p>
+            </div>
+    
+            <div class="links-col">
+                <h4>Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="project.html">Projects</a>
+                <a href="https://github.com/hddenuwan21?tab=repositories">Github</a>
+                <a href="other.html">Other</a>
+            </div>
+    
+            <div class="links">
+                <h4>Social Media</h4>
+                <a href="https://www.facebook.com/profile.php?id=100088516644408&mibextid=ZbWKwL">  <i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"> 
+                    <i class="fa-brands fa-twitter"></i></a>
+                <a href="#">  <i class="fa-brands fa-instagram"></i></a>
+                <a href="#">  <i class="fa-brands fa-linkedin-in"></i></a>
+                
+            </div>
+    
+         
+          
+          
+    
+        </div>
+    
+    </footer>
+    
+
+
+    
+    
+    <script>
+    
+    const toggleBtn =document.querySelector('.toggle_btn')
+        const toggleBtnIcon =document.querySelector('.toggle_btn i')
+        const dropDownMenu =document.querySelector('.dropdown_menu')
+    
+         toggleBtn.onclick = function name(params){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+             toggleBtnIcon.classList =isOpen
+             ? 'fa-solid fa-xmark'
+             : 'fa-solid fa-bars'
+         }
+        
+    </script>
+
+</body>
+
+</html>
